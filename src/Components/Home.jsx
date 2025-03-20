@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Search, Eye, Edit, Trash, Plus } from "lucide-react";
-
+import { MainComponent } from "./MainComponent";
 const activities = Array.from({ length: 8 }, (_, i) => ({
     id: i + 1,
     name: "Activity_name - " + i,
@@ -14,7 +14,7 @@ export function ActivityLogger() {
     return (
         <div className="flex h-screen bg-gray-100">
             {/* Sidebar */}
-            <aside className="w-64 bg-teal-700 text-white p-4">
+            <aside className="w-64 bg-gray-700 text-white p-4">
                 <h1 className="text-lg font-bold">DOMAIN LOGGER</h1>
                 <input
                     type="text"
@@ -98,7 +98,7 @@ export function ActivityLogger() {
             </aside>
 
             {/* Floating Add Button */}
-            <button className="fixed bottom-6 right-6 bg-teal-700 text-white p-4 rounded-full shadow-lg">
+            <button className="fixed bottom-6 right-6 bg-gray-700 text-white p-4 rounded-full shadow-lg">
                 <Plus size={24} />
             </button>
         </div>
