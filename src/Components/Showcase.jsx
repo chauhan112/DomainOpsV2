@@ -209,7 +209,7 @@ export function ArtisticAccordion() {
         nature: {
             container:
                 "bg-green-100 p-6 rounded-xl shadow-md border-2 border-green-200",
-            button: "w-full text-left p-4 bg-green-500 text-white hover:bg-green-600 transition-all duration-300 rounded-t-lg flex justify-between items-center",
+            button: "w-full text-left p-2 bg-green-500 text-white hover:bg-green-600 transition-all duration-300 rounded-t-lg flex justify-between items-center",
             content: "p-4 bg-green-50 text-green-800 border-t border-green-200",
             icon: "text-white",
         },

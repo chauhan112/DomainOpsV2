@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Search, Eye, Edit, Trash, Plus } from "lucide-react";
 import { MainComponent } from "./MainComponent";
+import { Sidebar } from "../rlib/timeline/t2025/mar/domainOps/Sidebar";
 const activities = Array.from({ length: 8 }, (_, i) => ({
     id: i + 1,
     name: "Activity_name - " + i,
@@ -14,21 +15,7 @@ export function ActivityLogger() {
     return (
         <div className="flex h-screen bg-gray-100">
             {/* Sidebar */}
-            <aside className="w-64 bg-gray-700 text-white p-4">
-                <h1 className="text-lg font-bold">DOMAIN LOGGER</h1>
-                <input
-                    type="text"
-                    placeholder="Search"
-                    className="w-full p-2 mt-4 text-black rounded"
-                    value={search}
-                    onChange={(e) => setSearch(e.target.value)}
-                />
-                <nav className="mt-4 space-y-2">
-                    <p className="cursor-pointer">Domain</p>
-                    <p className="cursor-pointer">Operation</p>
-                    <p className="cursor-pointer font-bold">Activity</p>
-                </nav>
-            </aside>
+            <Sidebar />
 
             {/* Main Content */}
             <main className="flex-1 p-6">

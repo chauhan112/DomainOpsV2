@@ -1,16 +1,13 @@
 import { ActivityLogger } from "./Components/Home";
-import { LinkButton } from "./rlib/timeline/t2025/mar/domainOps/Components";
-import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
-import {
-    CardAccordion,
-    AnimatedAccordion,
-    ArtisticAccordion,
-} from "./Components/Showcase";
+import { TestAccordion } from "./rlib/timeline/t2025/mar/domainOps/Test";
+import React, { useEffect } from "react";
 
 function App() {
+    let ref = React.createRef();
+    useEffect(() => {}, []);
+
     return (
         <>
-            {" "}
             {/* <HashRouter>
                 <Routes>
                     <Route path="/root" element={<ActivityLogger />} />
@@ -22,9 +19,12 @@ function App() {
                     />
                     <Route path="/" element={<ActivityLogger />} />
                 </Routes>
-            </HashRouter>
-            <ActivityLogger /> */}
-            <ArtisticAccordion />
+            </HashRouter> */}
+            {/* <ActivityLogger /> */}
+            {/* <DialogShowcase />
+            <HeaderShowcase />
+            <TestAccordion /> */}
+            <TestAccordion />
         </>
     );
 }
