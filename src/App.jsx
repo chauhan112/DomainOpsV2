@@ -1,11 +1,9 @@
 import { ActivityLogger } from "./Components/Home";
-import { TestAccordion } from "./rlib/timeline/t2025/mar/domainOps/Test";
+import { TestDropdown } from "./rlib/timeline/t2025/mar/domainOps/Test";
 import React, { useEffect } from "react";
+import { ContextMenuShowcase } from "./rlib/timeline/t2025/mar/domainOps/ContextMenuShowCase";
 
 function App() {
-    let ref = React.createRef();
-    useEffect(() => {}, []);
-
     return (
         <>
             {/* <HashRouter>
@@ -24,7 +22,7 @@ function App() {
             {/* <DialogShowcase />
             <HeaderShowcase />
             <TestAccordion /> */}
-            <TestAccordion />
+            <TestDropdown />
         </>
     );
 }
